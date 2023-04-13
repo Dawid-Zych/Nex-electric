@@ -207,6 +207,20 @@ body {
   background-position: center;
   z-index: 0;
 }
+.contact .check {
+  visibility: hidden;
+  background-color: hsl(0, 0%, 98%);
+  text-align: left;
+  font-size: 1.2rem;
+  color: red;
+}
+.contact .check.error {
+  visibility: visible;
+}
+.contact input.error,
+.contact textarea.error {
+  border: 1px solid red;
+}
 
 footer p {
   font-size: 1.4rem;

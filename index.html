@@ -293,47 +293,49 @@
                     </div>
                     <div class="col-lg-8 card p-5">
 
-                        <form class="row justify-content-center"
+                        <form id="form" class="row justify-content-center"
                             action="https://formsubmit.co/b0ff3a27ad2543bcf4b04062efd780fa" method="POST">
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-sm-6">
                                 <label for="name" class="form-label">Imię i nazwisko</label>
                                 <input type="text" class="form-control" id="name" name="Imię i nazwisko" required>
-                                <div class="invalid-feedback">
-                                    Please choose a username.
-                                </div>
+                                <div class="check">To pole nie może być puste</div>
                             </div>
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-sm-6">
                                 <label for="email" class="form-label" list>Adres mailowy</label>
                                 <input type="email" class="form-control" id="email" name="Adres mailowy"
                                     autocomplete="on" required>
+                                <div class="check">E-mail jest niepoprawny</div>
                             </div>
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-sm-6">
                                 <label for="number" class="form-label">Numer telefonu</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">+48</span>
-                                    <input type="tel" class="form-control" id="number" name="Telefon" required>
+                                    <input type="tel" class="form-control w-50" id="number" name="Telefon" required>
+                                    <div class="check">Podany numer telefonu jest niepoprawny</div>
                                 </div>
                             </div>
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-sm-6">
                                 <label for="select-table" class="form-label">Wybierz temat</label>
                                 <select class="form-select" name="Wybrany temat" id="select-table">
-                                    <option selected>---</option>
+                                    <option value="">---</option>
                                     <option value="1 nowa instalacja">nowa instalacja</option>
                                     <option value="2 modernizacja instalacji">modernizacja instalacji</option>
                                     <option value="3 awarie/diagnostyka">awarie/diagnostyka</option>
                                     <option value="4 inne">inne</option>
                                 </select>
+                                <div class="check">Musisz coś wybrać</div>
                             </div>
                             <div class="mb-3">
-                                <label for="text-info" class="form-label">Treść wiadomości:</label>
-                                <textarea class="form-control" id="text-info" rows="3" name="Treść wiadomosći"
+                                <label for="message" class="form-label">Treść wiadomości:</label>
+                                <textarea class="form-control" id="message" rows="3" name="Treść wiadomosći"
                                     required></textarea>
+                                <div class="check">To pole nie może być puste</div>
                             </div>
                             <input type="hidden" name="_next" value="https://nex-electric.netlify.app/thanks.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_autoresponse"
                                 value="Dziekujemy za wysłanie wiadomości. Postaramy się odpowiedzieć jak najszybciej. Nex-electric" />
-                            <button type="submit" class="btn btn-primary col-4">Wyślij</button>
+                            <input class="submitBtn btn btn-primary col-4 " type="submit" value="Wyślij" />
                         </form>
                     </div>
                 </div>

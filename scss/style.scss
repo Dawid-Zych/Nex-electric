@@ -72,13 +72,13 @@ body {
 		font-size: 3rem;
 	}
 
-	.thanks-page {	
-		background-color: #ddd;	
+	.thanks-page {
+		background-color: #ddd;
 		font-size: 2rem;
-        
+
 		.btn {
-            font-size: 1.4rem;
-            box-shadow: 0 0 10px black
+			font-size: 1.4rem;
+			box-shadow: 0 0 10px black;
 		}
 	}
 }
@@ -249,6 +249,23 @@ body {
 		background-size: cover;
 		background-position: center;
 		z-index: 0;
+	}
+
+	.check {
+		visibility: hidden;
+		background-color: hsl(0, 0%, 98%);
+		text-align: left;
+		font-size: 1.2rem;
+		color: red;
+	}
+
+	.check.error {
+		visibility: visible;
+	}
+
+	input.error,
+	textarea.error {
+		border: 1px solid red;
 	}
 }
 
