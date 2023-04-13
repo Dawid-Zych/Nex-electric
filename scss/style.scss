@@ -1,0 +1,290 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	scroll-padding-top: 124px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ddd;
+}
+
+.hero-shadow {
+	position: absolute;
+	z-index: -10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+	.navbar-brand {
+		font-weight: bold;
+		font-size: 2.4rem;
+
+		p {
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+	.navbar-nav {
+		font-size: 2.4rem;
+	}
+
+	.logo {
+		height: 40px;
+	}
+
+	.navbar-toggler {
+		font-size: 3rem;
+		padding: 15px;
+	}
+	.fixly {
+		width: 80px;
+	}
+}
+
+.header {
+	position: relative;
+	z-index: 0;
+	background-image: url(../img/main-hero/lightbulb.jpg);
+	height: 100vh;
+	background-position: top 10% left 50%;
+	background-size: cover;
+	object-fit: cover;
+
+	.hero-text {
+		z-index: 10;
+		font-size: 2rem;
+	}
+
+	.btn {
+		padding: 0.6em 2em;
+		font-size: 3rem;
+	}
+
+	.thanks-page {	
+		background-color: #ddd;	
+		font-size: 2rem;
+        
+		.btn {
+            font-size: 1.4rem;
+            box-shadow: 0 0 10px black
+		}
+	}
+}
+
+.aboutus {
+	.my-photo {
+		width: 300px;
+		height: 100%;
+	}
+
+	.description {
+		h3 {
+			text-align: center;
+			font-size: 2rem;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 1.4rem;
+		}
+
+		.btn {
+			font-size: 2rem;
+			padding: 1rem;
+			margin-left: 30px;
+		}
+	}
+
+	.aboutus-slider {
+		.carousel-inner {
+			height: 350px;
+			.carousel-item {
+				position: relative;
+				z-index: 0;
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 100%;
+			}
+
+			.carousel-img-one {
+				background-image: url(../img/slides/slide-1.jpg);
+				background-position: bottom 20% left 0;
+			}
+
+			.carousel-img-two {
+				background-image: url(../img/slides/slide-2.jpg);
+			}
+
+			.carousel-img-three {
+				background-image: url(../img/slides/slide-3.jpg);
+			}
+
+			.carousel-img-four {
+				background-image: url(../img/slides/slide-4.jpg);
+			}
+
+			h4 {
+				font-size: 3.6rem;
+				text-transform: uppercase;
+				margin-bottom: 2rem;
+				font-weight: bold;
+			}
+
+			p {
+				font-size: 1.6rem;
+			}
+
+			i {
+				font-size: 3.6rem;
+				margin-bottom: 1rem;
+
+				&.fa-lightbulb {
+					color: yellow;
+				}
+
+				&.fa-screwdriver-wrench {
+					color: royalblue;
+				}
+
+				&.fa-magnifying-glass {
+					color: tomato;
+				}
+
+				&.fa-stethoscope {
+					color: darkgreen;
+				}
+			}
+		}
+	}
+}
+
+.services {
+	h2 {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 4rem;
+		color: rgb(149, 166, 18);
+	}
+
+	i {
+		font-size: 3.6rem;
+		color: rgb(149, 166, 18);
+		transition: transform 0.3s;
+	}
+
+	.card {
+		background-color: #ddd;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgb(255, 193, 7);
+
+			i,
+			.card-title {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	.card-title {
+		font-size: 2rem;
+		text-transform: uppercase;
+		padding: 1rem;
+		transition: transform 0.3s;
+	}
+
+	.card-text {
+		font-size: 1.4rem;
+	}
+}
+
+.contact {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+	h3 {
+		font-size: 3.6rem;
+	}
+
+	p {
+		font-size: 2.6rem;
+	}
+
+	input,
+	select,
+	textarea {
+		font-size: 1.6rem;
+	}
+
+	label,
+	span {
+		font-size: 1.7rem;
+	}
+
+	.btn {
+		border-radius: 15px;
+		padding: 0.3em 0.8em;
+		font-size: 2rem;
+	}
+
+	i {
+		font-size: 3.5rem;
+		margin-left: 15px;
+	}
+
+	.contact-left {
+		background-image: url(../img/bg.jpg);
+		background-size: cover;
+		background-position: center;
+		z-index: 0;
+	}
+}
+
+footer {
+	p {
+		font-size: 1.4rem;
+	}
+}
+@media (max-width: 578px) {
+	.aboutus {
+		.description {
+			h3 {
+				font-size: 1.6rem;
+			}
+
+			p {
+				text-align: center;
+			}
+		}
+	}
+
+	.contact {
+		h3 {
+			font-size: 3.4rem;
+		}
+		label {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		background-image: url(../img/main-hero/lightbulb-hd.jpg);
+	}
+	.my-photo {
+		content: url(../img/electrician-hd.jpg);
+	}
+}

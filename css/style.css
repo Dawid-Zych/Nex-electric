@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 124px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ddd;
+}
+
+.hero-shadow {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.navbar .navbar-brand p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.navbar .navbar-nav {
+  font-size: 2.4rem;
+}
+.navbar .logo {
+  height: 40px;
+}
+.navbar .navbar-toggler {
+  font-size: 3rem;
+  padding: 15px;
+}
+.navbar .fixly {
+  width: 80px;
+}
+
+.header {
+  position: relative;
+  z-index: 0;
+  background-image: url(../img/main-hero/lightbulb.jpg);
+  height: 100vh;
+  background-position: top 10% left 50%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .hero-text {
+  z-index: 10;
+  font-size: 2rem;
+}
+.header .btn {
+  padding: 0.6em 2em;
+  font-size: 3rem;
+}
+.header .thanks-page {
+  background-color: #ddd;
+  font-size: 2rem;
+}
+.header .thanks-page .btn {
+  font-size: 1.4rem;
+  box-shadow: 0 0 10px black;
+}
+
+.aboutus .my-photo {
+  width: 300px;
+  height: 100%;
+}
+.aboutus .description h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.aboutus .description p {
+  font-size: 1.4rem;
+}
+.aboutus .description .btn {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: 30px;
+}
+.aboutus .aboutus-slider .carousel-inner {
+  height: 350px;
+}
+.aboutus .aboutus-slider .carousel-inner .carousel-item {
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.aboutus .aboutus-slider .carousel-inner .carousel-img-one {
+  background-image: url(../img/slides/slide-1.jpg);
+  background-position: bottom 20% left 0;
+}
+.aboutus .aboutus-slider .carousel-inner .carousel-img-two {
+  background-image: url(../img/slides/slide-2.jpg);
+}
+.aboutus .aboutus-slider .carousel-inner .carousel-img-three {
+  background-image: url(../img/slides/slide-3.jpg);
+}
+.aboutus .aboutus-slider .carousel-inner .carousel-img-four {
+  background-image: url(../img/slides/slide-4.jpg);
+}
+.aboutus .aboutus-slider .carousel-inner h4 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.aboutus .aboutus-slider .carousel-inner p {
+  font-size: 1.6rem;
+}
+.aboutus .aboutus-slider .carousel-inner i {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+.aboutus .aboutus-slider .carousel-inner i.fa-lightbulb {
+  color: yellow;
+}
+.aboutus .aboutus-slider .carousel-inner i.fa-screwdriver-wrench {
+  color: royalblue;
+}
+.aboutus .aboutus-slider .carousel-inner i.fa-magnifying-glass {
+  color: tomato;
+}
+.aboutus .aboutus-slider .carousel-inner i.fa-stethoscope {
+  color: darkgreen;
+}
+
+.services h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+  color: rgb(149, 166, 18);
+}
+.services i {
+  font-size: 3.6rem;
+  color: rgb(149, 166, 18);
+  transition: transform 0.3s;
+}
+.services .card {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.services .card:hover {
+  background-color: rgb(255, 193, 7);
+}
+.services .card:hover i,
+.services .card:hover .card-title {
+  transform: scale(1.2);
+}
+.services .card-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+.services .card-text {
+  font-size: 1.4rem;
+}
+
+.contact {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.contact h3 {
+  font-size: 3.6rem;
+}
+.contact p {
+  font-size: 2.6rem;
+}
+.contact input,
+.contact select,
+.contact textarea {
+  font-size: 1.6rem;
+}
+.contact label,
+.contact span {
+  font-size: 1.7rem;
+}
+.contact .btn {
+  border-radius: 15px;
+  padding: 0.3em 0.8em;
+  font-size: 2rem;
+}
+.contact i {
+  font-size: 3.5rem;
+  margin-left: 15px;
+}
+.contact .contact-left {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 578px) {
+  .aboutus .description h3 {
+    font-size: 1.6rem;
+  }
+  .aboutus .description p {
+    text-align: center;
+  }
+  .contact h3 {
+    font-size: 3.4rem;
+  }
+  .contact label {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    background-image: url(../img/main-hero/lightbulb-hd.jpg);
+  }
+  .my-photo {
+    content: url(../img/electrician-hd.jpg);
+  }
+}/*# sourceMappingURL=style.css.map */

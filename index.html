@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEX Electric</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/de05f8354b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id="navbar" class="navbar bg-dark navbar-expand-lg bg-body-tertiary sticky-top py-4" data-bs-theme="dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="./img/logo.png" class="logo mb-4" alt="">NEX Electric&#9889;
+                <p class="text-warning">Marcin Zych +48 782-807-976 </p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto mt-4 mt-md-0">
+                    <a class="nav-link  mx-lg-4 active" href="#home">Home</a>
+                    <a class="nav-link  mx-lg-4" href="#aboutus">O Firmie</a>
+                    <a class="nav-link  mx-lg-4" href="#services">Usługi</a>
+                    <a class="nav-link  mx-lg-4" href="#prices">Cennik</a>
+                    <a class="nav-link  mx-lg-4" href="#contact">Kontakt</a>
+                    <a class="nav-link bg-warning rounded-5  mx-lg-3 fixly" href="https://fixly.pl/profil/PI6Kh2Qy"
+                        target="_blank"><img src="./img/fixly_logo.svg" alt="link do profilu na fixly.pl"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="header text-center">
+        <div class="container h-75 d-flex flex-column align-items-center justify-content-center">
+            <div class="hero-text text-light mt-4">
+                <p class="display-1 text-uppercase fw-bold mb-4">NEX Electric&#9889;</p>
+                <p class="welcome-text">Jedyna firma którą musisz znać!</p>
+                <p class="welcome-text mb-5">Szeroki zakres usług elektrycznych i nie tylko...</p>
+                <a href="#aboutus" class="btn btn-outline-warning text-uppercase">poznaj nas</a>
+            </div>
+            <div class="hero-shadow"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutus" class="aboutus py-5">
+            <div class="container py-3 aboutus-top">
+                <div class="row">
+                    <div class="col-lg-4 text-center mb-4">
+                        <img src="./img/electrician.jpg" class="my-photo" alt="elektryk przy tablicy rozdzielczej">
+                    </div>
+                    <div class="col-lg-8 px-5 description">
+                        <h3>Szukasz elektryka? - do usług!</h3>
+                        <p>Cześć nazywam się Marcin Zych i jestem elektrykiem z zawodu i
+                            zamiłowania.</p>
+                        <p>
+                            Wykonuje prace na instalacjach elektrycznych. Kompleksowe badania,
+                            pomiary instalacji elektrycznych, oświetleniowych, odgromowych.
+                        </p>
+                        <p>Swoją ofertę kieruję do mieszkańców, firm, instytucji i innych podmiotów użyteczności
+                            publicznej znajdujących się na terenie Małopolski. Posiadam wszystkie niezbędne uprawnienia
+                            do prac elektroinstalacyjnych </p>
+                        <div class="box d-flex justify-content-between align-items-center text-center">
+                            <p class="m-0">Najczęściej polecany elektryk w Krakowie!
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary" role="button">Kontakt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboutus-slider py-5">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item  carousel-img-one active">
+                            <div
+                                class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-regular fa-lightbulb"></i>
+                                <h4>Instalacje</h4>
+                                <p>Montuje, modernizuje, naprawiam, przeglądam i wymieniam instalacje elektryczne.</p>
+                            </div>
+                            <div class="hero-shadow"></div>
+                        </div>
+
+                        <div class="carousel-item  carousel-img-two">
+                            <div
+                                class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <h4>Awarie</h4>
+                                <p>Rozwiązuje Twoje problemy z prądem, kiedy do końca nie potrafisz sobie z nimi
+                                    poradzić.</p>
+                            </div>
+                            <div class="hero-shadow"></div>
+                        </div>
+
+                        <div class="carousel-item  carousel-img-three">
+                            <div
+                                class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <h4>Pomiary</h4>
+                                <p>Wykonuje okresowe pomiary instalacji elektrycznej, odgromowej oraz oświetlenia.</p>
+                            </div>
+                            <div class="hero-shadow"></div>
+                        </div>
+
+                        <div class="carousel-item  carousel-img-four">
+                            <div
+                                class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-stethoscope"></i>
+                                <h4>Diagnostyka</h4>
+                                <p>Znajduje oraz usuwam przyczyny anomalii w działaniu instalacjach elektrycznych.</p>
+                            </div>
+                            <div class="hero-shadow"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services bg-dark py-5">
+            <div class="container text-center text-light py-5">
+                <h2>Usługi</h2>
+                <p class="mb-5 fs-3">Specjalizuje się w kompleksowych usługach elektrycznych w budynkach jedno jak i
+                    wielorodzinnych, w tym:</p>
+                <div class="row row-cols-md-2 row-cols-lg-3 g-4 py-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-1" data-bs-toggle="collapse">
+                            <i class="fa-regular fa-building"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">montaż instalacji elektrycznych</h3>
+                                <p class="card-text collapse" id="card-text-1">Poprawne zaprojektowanie i zamontowanie
+                                    instalacji elektrycznej
+                                    jest niezwykle istotne, ponieważ od tego zależy późniejsze bezpieczeństwo
+                                    użytkowników.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-2" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">modernizacje instalacji</h3>
+                                <p class="card-text collapse" id="card-text-2">Często stare kable i rozwiązania nie
+                                    radzą
+                                    sobie ze wzrastającą liczbą odbiorników.
+                                    Zawodzą, kiedy podłącza się do nich nowoczesny sprzęt elektroniczny, ale także
+                                    zagrażają bezpieczeństwu zarówno mieszkańców, jak i podłączonych do gniazdek
+                                    urządzeń, grożąc porażeniem lub nawet pożarem. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-3" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-house-signal"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">przyłącza budowlane</h3>
+                                <p class="card-text collapse" id="card-text-3">Budujesz nową lub modernizujesz
+                                    istniejącą inwestycję? Potrzebujesz
+                                    instalacji, która zapewni Ci niezawodny dostęp do prądu? Budowa przyłącza
+                                    energetycznego to konieczny etap każdego projektu budowlanego.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-4" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-person-booth"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">wyniesienia pomiaru</h3>
+                                <p class="card-text collapse" id="card-text-4"> Przeniesienie licznika energii
+                                    elektrycznej - co jest ważne, jak
+                                    to należy zrobić? Wszystkiego sie dowiesz u mnie. W ramach prac związanych z
+                                    przeniesieniem licznika w nowe miejsce należy przewidzieć także
+                                    likwidację dotychczas wykorzystywanego fragmentu instalacji elektrycznej.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-5" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-fire-burner"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">podłączanie płyt kuchennych oraz innego AGD</h3>
+                                <p class="card-text collapse" id="card-text-5"> Oferuje podłączenie sprzętu AGD
+                                    wszelkiego rodzaju: kuchenki
+                                    elektrycznej, kuchenki gazowej, płyty indukcyjnej i ceramicznej, sprzętów do
+                                    zabudowy, piekarnika itd. Podbijam gwarancje pieczątka z uprawieniami elektrycznymi
+                                    i gazowymi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-6" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-house-circle-check"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">kontrola stanu technicznego instalacji elektrycznych</h3>
+                                <p class="card-text collapse" id="card-text-6">Okresowy przegląd instalacji elektrycznej
+                                    odgrywa istotną rolę dla
+                                    zapewniania sprawności użytkowanych urządzeń technicznych, ale przede wszystkim jest
+                                    gwarancją zapewnienia bezpieczeństwa pod względem zagrożeń pożarowych.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-7" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-list-check"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">pomiary elektryczne</h3>
+                                <p class="card-text collapse" id="card-text-7">Dokonywanie pomiarów instalacji
+                                    elektrycznej ma na celu zapewnienie
+                                    bezpieczeństwa wszystkim tym ludziom, którzy znajdują się w bliskiej odległości od
+                                    sprawdzanej instalacji. Po wykonaniu prac sporządzam odpowiedni protokoł z
+                                    wykonanych prac.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-8" data-bs-toggle="collapse">
+                            <i class="fa-regular fa-clock"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">pogotowie elektryczne 24/7</h3>
+                                <p class="card-text collapse" id="card-text-8">Elektryk 24H. Wymiana bezpieczników.
+                                    Naprawa instalacji
+                                    elektrycznej. Przywracanie oświetlenia i napięcia w gniazdach.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 p-4 border-warning text-dark" btn type="button"
+                            data-bs-target="#card-text-9" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">drobne prace, awarie,usterki</h3>
+                                <p class="card-text collapse" id="card-text-9">Lokalizacja zwarcia w instalacji
+                                    elektrycznej, montaż lamp,
+                                    gniazdek elektrycznych, wymiana włacznika róznicowoprądowego i inne prace</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="py-5 bg-light-subtle">
+            <div class="container py-5">
+                <div class="row contact">
+                    <div class="col-lg-4 card p-5 justify-content-center align-items-center text-white contact-left">
+                        <h3 class="text-uppercase fw-bold">Telefon:</h3>
+                        <p class="mb-5">+48 782-807-976</p>
+                        <h3 class="text-uppercase fw-bold mb-3">Social-media</h3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/profile.php?id=100063467949833" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="hero-shadow"></div>
+                    </div>
+                    <div class="col-lg-8 card p-5">
+
+                        <form class="row justify-content-center"
+                            action="https://formsubmit.co/b0ff3a27ad2543bcf4b04062efd780fa" method="POST">
+                            <div class="mb-3 col-6">
+                                <label for="name" class="form-label">Imię i nazwisko</label>
+                                <input type="text" class="form-control" id="name" name="Imię i nazwisko" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="email" class="form-label" list>Adres mailowy</label>
+                                <input type="email" class="form-control" id="email" name="Adres mailowy"
+                                    autocomplete="on" required>
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="number" class="form-label">Numer telefonu</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">+48</span>
+                                    <input type="tel" class="form-control" id="number" name="Telefon" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="select-table" class="form-label">Wybierz temat</label>
+                                <select class="form-select" name="Wybrany temat" id="select-table">
+                                    <option selected>---</option>
+                                    <option value="1 nowa instalacja">nowa instalacja</option>
+                                    <option value="2 modernizacja instalacji">modernizacja instalacji</option>
+                                    <option value="3 awarie/diagnostyka">awarie/diagnostyka</option>
+                                    <option value="4 inne">inne</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="text-info" class="form-label">Treść wiadomości:</label>
+                                <textarea class="form-control" id="text-info" rows="3" name="Treść wiadomosći"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary col-4">Wyślij</button>
+                            <input type="hidden" name="_next" value="https://nex-electric.netlify.app/thanks.html">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4 text-center">
+        <p class="mb-0">&copy;Copyright © 2023 - Nex Electric - Wszystkie prawa zastrzeżone </p>
+    </footer>
+
+    <!-- <div class="container">Marcin Zych
+        <a href=https://fixly.pl/profil/PI6Kh2Qy target=_blank> <img alt=Polecają mnie na Fixly
+                src=https://fixly.pl/profil/PI6Kh2Qy/widget-a01-2x.png style=border: 0px none;> </a>
+    </div> -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
