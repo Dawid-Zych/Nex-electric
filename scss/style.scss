@@ -213,13 +213,34 @@ body {
 
 .contact {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	.contact-left {
+		background-image: url(../img/bg.jpg);
+		background-size: cover;
+		background-position: center;
+		z-index: 0;
 
-	h3 {
-		font-size: 3.6rem;
+		h3 {
+			font-size: 3.6rem;
+		}
+
+		p {
+			font-size: 3.2rem;
+		}
+		.social-media {
+			background-color: #0d6efd;
+			border-radius: 20px;
+			transition: background-color 0.3s;
+
+			a {
+				font-size: 3.2rem;
+				text-decoration: none;
+				color: white;
+			}
+		}
 	}
 
-	p {
-		font-size: 2.6rem;
+	.social-media:hover {
+		background-color: #0b5ed7;
 	}
 
 	input,
@@ -237,18 +258,6 @@ body {
 		border-radius: 15px;
 		padding: 0.3em 0.8em;
 		font-size: 2rem;
-	}
-
-	i {
-		font-size: 3.5rem;
-		margin-left: 15px;
-	}
-
-	.contact-left {
-		background-image: url(../img/bg.jpg);
-		background-size: cover;
-		background-position: center;
-		z-index: 0;
 	}
 
 	.check {
@@ -293,6 +302,12 @@ footer {
 		}
 		label {
 			font-size: 1.4rem;
+		}
+	}
+
+	footer {
+		p {
+			font-size: 1.2rem;
 		}
 	}
 }

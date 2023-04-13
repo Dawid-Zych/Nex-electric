@@ -177,11 +177,30 @@ body {
 .contact {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
-.contact h3 {
+.contact .contact-left {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.contact .contact-left h3 {
   font-size: 3.6rem;
 }
-.contact p {
-  font-size: 2.6rem;
+.contact .contact-left p {
+  font-size: 3.2rem;
+}
+.contact .contact-left .social-media {
+  background-color: #0d6efd;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.contact .contact-left .social-media a {
+  font-size: 3.2rem;
+  text-decoration: none;
+  color: white;
+}
+.contact .social-media:hover {
+  background-color: #0b5ed7;
 }
 .contact input,
 .contact select,
@@ -196,16 +215,6 @@ body {
   border-radius: 15px;
   padding: 0.3em 0.8em;
   font-size: 2rem;
-}
-.contact i {
-  font-size: 3.5rem;
-  margin-left: 15px;
-}
-.contact .contact-left {
-  background-image: url(../img/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
 }
 .contact .check {
   visibility: hidden;
@@ -238,6 +247,9 @@ footer p {
   }
   .contact label {
     font-size: 1.4rem;
+  }
+  footer p {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 992px) {
