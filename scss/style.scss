@@ -82,7 +82,7 @@ body {
 		}
 	}
 
-	.fa-chevron-down {
+	.showMore {
 		position: absolute;
 		bottom: 30px;
 		left: 50%;
@@ -245,7 +245,8 @@ body {
 		background-color: #ddd;
 		cursor: pointer;
 
-		&:hover {
+		&:hover,
+		&:not(.collapsed) {
 			background-color: rgb(255, 193, 7);
 
 			i,
@@ -307,6 +308,11 @@ body {
 			font-size: 2.4rem;
 			padding: 2rem;
 			text-transform: uppercase;
+			transition: background-color 0.2s;
+
+			&:hover {
+				background-color: rgb(255, 193, 7);
+			}
 		}
 
 		.accordion-button:not(.collapsed) {

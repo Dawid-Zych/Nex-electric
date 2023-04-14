@@ -114,7 +114,7 @@ body {
   font-size: 1.4rem;
   box-shadow: 0 0 10px black;
 }
-.header .fa-chevron-down {
+.header .showMore {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -248,11 +248,12 @@ body {
   background-color: #ddd;
   cursor: pointer;
 }
-.services .card:hover {
+.services .card:hover, .services .card:not(.collapsed) {
   background-color: rgb(255, 193, 7);
 }
 .services .card:hover i,
-.services .card:hover .card-title {
+.services .card:hover .card-title, .services .card:not(.collapsed) i,
+.services .card:not(.collapsed) .card-title {
   transform: scale(1.2);
 }
 .services .card-title {
@@ -301,6 +302,10 @@ body {
   font-size: 2.4rem;
   padding: 2rem;
   text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+.prices .accordion .accordion-button:hover {
+  background-color: rgb(255, 193, 7);
 }
 .prices .accordion .accordion-button:not(.collapsed) {
   background-color: rgb(255, 193, 7);
