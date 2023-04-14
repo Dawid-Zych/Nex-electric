@@ -273,10 +273,48 @@ body {
   color: rgb(16, 17, 2);
 }
 
+.prices {
+  position: relative;
+  background-image: url(../img/offer/distributor.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  z-index: 0;
+}
 .prices h2 {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: bold;
+  color: white;
+}
+.prices h2 span {
+  border-bottom: 4px solid rgb(255, 193, 7);
+}
+.prices .accordion {
+  text-align: left;
+}
+.prices .accordion h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.prices .accordion .accordion-button {
+  font-size: 2.4rem;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+.prices .accordion .accordion-button:not(.collapsed) {
+  background-color: rgb(255, 193, 7);
+  color: black;
+  font-weight: bold;
+}
+.prices .accordion .accordion-body {
+  text-align: left;
+}
+.prices .accordion .accordion-body th {
+  font-size: 2rem;
+}
+.prices .accordion .accordion-body td {
+  font-size: 1.4rem;
 }
 
 .contact {
@@ -291,13 +329,17 @@ body {
 .contact .contact-left h3 {
   font-size: 3.6rem;
 }
-.contact .contact-left .social-media {
+.contact .contact-left .social-media .fb-icon {
   background-color: #0d6efd;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background-color 0.3s;
 }
+.contact .contact-left .social-media .flix-icon img {
+  width: 100%;
+  height: 100%;
+}
 .contact .contact-left .social-media a {
-  font-size: 3.2rem;
+  font-size: 4rem;
   text-decoration: none;
   color: white;
 }
@@ -306,7 +348,7 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
-.contact .social-media:hover {
+.contact .social-media .fb-icon:hover {
   background-color: #0b5ed7;
 }
 .contact input,
@@ -349,11 +391,17 @@ footer p {
   .aboutus .description p {
     text-align: center;
   }
+  .prices .accordion .accordion-button {
+    font-size: 1.6rem;
+  }
   .contact h3 {
     font-size: 3.4rem;
   }
   .contact label {
     font-size: 1.4rem;
+  }
+  .contact .contact-left .social-media a {
+    font-size: 2.4rem;
   }
   footer p {
     font-size: 1.2rem;
@@ -368,5 +416,8 @@ footer p {
   }
   .header-offer {
     background-image: url(../img/offer/distributor-hd.jpg);
+  }
+  .contact .contact-left .social-media a {
+    font-size: 2.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
