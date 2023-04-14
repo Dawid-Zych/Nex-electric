@@ -61,7 +61,6 @@ body {
 	height: 80vh;
 	background-position: top 10% left 50%;
 	background-size: cover;
-	object-fit: cover;
 
 	.hero-text {
 		z-index: 10;
@@ -82,14 +81,61 @@ body {
 			box-shadow: 0 0 10px black;
 		}
 	}
-	
+
 	.fa-chevron-down {
 		position: absolute;
-		bottom: 20px;
+		bottom: 30px;
 		left: 50%;
 		transform: translateX(-50%);
 		font-size: 30px;
 		color: white;
+	}
+}
+
+.header-offer {
+	position: relative;
+	background-attachment: fixed;
+	z-index: 0;
+	background-image: url(../img/offer/distributor.jpg);
+	background-position: top 10% left 50%;
+	background-size: cover;
+
+	h1 {
+		margin-top: 2rem;
+		font-weight: bold;
+		font-size: 3.6rem;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+	}
+
+	li {
+		font-size: 1.4rem;
+		text-transform: lowercase;
+		margin-bottom: 1rem;
+		letter-spacing: 1.4;
+	}
+
+	.hero-shadow {
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+
+	.btn {
+		padding: 2rem;
+		font-size: 3rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.btn-back {
+		font-weight: normal;
+		margin-top: 2rem;
+		font-size: 1rem;
 	}
 }
 
@@ -219,7 +265,29 @@ body {
 	.card-text {
 		font-size: 1.4rem;
 	}
+
+	.btn {
+		color: rgb(149, 166, 18);
+		border-color: rgb(149, 166, 18);
+	}
+
+	.btn:hover {
+		background-color: rgb(84, 94, 7);
+		color: rgb(16, 17, 2);
+	}
 }
+
+.prices {
+	 h2 {
+		text-transform: uppercase;
+		font-size: 4rem;
+		font-weight: bold;
+	 }
+}
+
+
+
+
 
 .contact {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -233,9 +301,6 @@ body {
 			font-size: 3.6rem;
 		}
 
-		p {
-			font-size: 3.2rem;
-		}
 		.social-media {
 			background-color: #0d6efd;
 			border-radius: 20px;
@@ -246,6 +311,11 @@ body {
 				text-decoration: none;
 				color: white;
 			}
+		}
+		.contact-number {
+			font-size: 3.5rem;
+			font-weight: bold;
+			text-decoration: none;
 		}
 	}
 
