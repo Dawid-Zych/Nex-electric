@@ -278,16 +278,12 @@ body {
 }
 
 .prices {
-	 h2 {
+	h2 {
 		text-transform: uppercase;
 		font-size: 4rem;
 		font-weight: bold;
-	 }
+	}
 }
-
-
-
-
 
 .contact {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -398,5 +394,9 @@ footer {
 	}
 	.my-photo {
 		content: url(../img/electrician-hd.jpg);
+	}
+
+	.header-offer {
+		background-image: url(../img/offer/distributor-hd.jpg);
 	}
 }

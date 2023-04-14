@@ -366,4 +366,7 @@ footer p {
   .my-photo {
     content: url(../img/electrician-hd.jpg);
   }
+  .header-offer {
+    background-image: url(../img/offer/distributor-hd.jpg);
+  }
 }/*# sourceMappingURL=style.css.map */
