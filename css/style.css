@@ -248,11 +248,12 @@ body {
   background-color: #ddd;
   cursor: pointer;
 }
-.services .card:hover, .services .card:not(.collapsed) {
+.services .card:hover, .services .card:active, .services .card:not(.collapsed) {
   background-color: rgb(255, 193, 7);
 }
 .services .card:hover i,
-.services .card:hover .card-title, .services .card:not(.collapsed) i,
+.services .card:hover .card-title, .services .card:active i,
+.services .card:active .card-title, .services .card:not(.collapsed) i,
 .services .card:not(.collapsed) .card-title {
   transform: scale(1.2);
 }

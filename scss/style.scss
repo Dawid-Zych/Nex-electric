@@ -246,6 +246,7 @@ body {
 		cursor: pointer;
 
 		&:hover,
+		&:active,
 		&:not(.collapsed) {
 			background-color: rgb(255, 193, 7);
 
