@@ -1,21 +1,6 @@
 const navLinks = document.querySelectorAll('.nav-link');
 const nav = document.querySelector('.navbar-collapse');
 
-const hideNav = () => {
-	nav.classList.remove('show');
-};
-
-navLinks.forEach(el => el.addEventListener('click', hideNav));
-
-/* Alternatywnie
-
-document.addEventListener('click', () => {
-	if (nav.classList.contains('show')) {
-		nav.classList.remove('show');
-	}
-}); */
-
-// form validation and send msg
 const username = document.querySelector('#name');
 const email = document.querySelector('#email');
 const phone = document.querySelector('#number');
@@ -25,6 +10,16 @@ const submitBtn = document.querySelector('.submitBtn');
 const form = document.querySelector('#form');
 const select = document.querySelector('#select-table');
 
+const year = document.querySelector('.year');
+const currYear = new Date().getFullYear();
+year.textContent = currYear;
+
+/* HIDE NAV */
+const hideNav = () => {
+	nav.classList.remove('show');
+};
+
+/* FORM VALIDATE */
 const checkForm = input => {
 	input.forEach(el => {
 		if (el.value === '') {
@@ -99,6 +94,10 @@ const checkErrors = () => {
 		form.submit();
 	}
 };
+
+/* YEAR IN FOOTER */
+
+navLinks.forEach(el => el.addEventListener('click', hideNav));
 
 submitBtn.addEventListener('click', e => {
 	e.preventDefault();
